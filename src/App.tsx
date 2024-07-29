@@ -43,6 +43,8 @@ const App = () => {
         setCalculation(
           (prevText) => (prevText = prevText.slice(0, prevText.length - 1)),
         );
+      } else if (text == "RESET") {
+        setCalculation("");
       } else {
         setCalculation((prevText) => (prevText += text));
       }
@@ -51,7 +53,7 @@ const App = () => {
 
   return (
     <div className="grid h-screen place-content-center bg-slate-700">
-      <div className="mx-auto flex w-2/3 flex-col gap-4">
+      <div className="mx-auto flex flex-col gap-4 px-4 sm:w-2/3 sm:px-0">
         <div className="flex w-full justify-between">
           <p className="text-2xl font-extrabold text-white">calc</p>
           <button className="font-bold text-white">Theme</button>

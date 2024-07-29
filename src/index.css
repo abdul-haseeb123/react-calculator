@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html[data-theme="theme1"] {
+    --main-background: 222, 26%, 31%;
+    --keypad-background: 223, 31%, 20%;
+    --screen-background: 224, 36%, 15%;
+    --key-background: 225, 21%, 49%;
+    --key-shadow: 224, 28%, 35%;
+    --red-key-background: 6, 63%, 50%;
+    --red-key-shadow: 6, 70%, 34%;
+    --gray-key-background: 30, 25%, 89%;
+    --gray-key-shadow: 28, 16%, 65%;
+    --text-dark: 221, 14%, 31%;
+    --text-white: 0, 0%, 100%;
+  }
+  html[data-theme="theme2"] {
+  }
+  html[data-theme="theme3"] {
+  }
+}
