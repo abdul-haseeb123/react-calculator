@@ -16,7 +16,7 @@ const Button = ({ children, variant, onClick, className, theme }: Props) => {
     <button
       onClick={onClick}
       className={cn(
-        "grid place-content-center rounded-lg  text-[2rem] font-bold shadow-md",
+        "grid place-content-center rounded-lg  text-[2rem] font-bold shadow-md transition-colors duration-150",
         {
           "bg-lightGrayishOrange/90 text-darkGrayishBlue shadow-grayishOrange hover:bg-lightGrayishOrange":
             theme == "theme1" && variant == "primary",
@@ -34,7 +34,7 @@ const Button = ({ children, variant, onClick, className, theme }: Props) => {
             theme == "theme1" && variant == "equals",
           "bg-orange text-white shadow-darkOrange hover:bg-orange/90":
             theme == "theme2" && variant == "equals",
-          "bg-pureCyan shadow-softCyan hover:bg-softCyan text-white":
+          "bg-pureCyan text-white shadow-softCyan hover:bg-softCyan":
             theme == "theme3" && variant == "equals",
         },
         className,

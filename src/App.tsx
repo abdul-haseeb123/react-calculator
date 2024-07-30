@@ -102,7 +102,7 @@ const App = () => {
         </div>
         <div
           className={cn(
-            "h-24 w-full rounded-lg  px-4 py-2 text-right text-5xl font-bold  caret-transparent shadow-md outline-none",
+            "flex h-24 w-full items-center justify-end  rounded-lg px-4 py-2 text-right text-5xl  font-bold caret-transparent shadow-md outline-none",
             {
               "bg-desaturatedblue-900 text-white shadow-desaturatedblue-800":
                 theme == "theme1",
